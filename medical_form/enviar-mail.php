@@ -24,7 +24,7 @@ if (isset($_POST['name'])){
 	$header = "MIME-Version: 1.0\r\n";
 	$header .= "Content-type: text/html; charset=UTF-8\r\n";
 	$header .= "From: ". $nombres . " <" . $email. ">\r\n";
-	$email='jomorez666@gmail.com';//Ingresa tu dirección de correo
+	$email='your@email.com';//Ingresa tu dirección de correo
 	
 	$subject="Nueva cita médica en línea de: ".$nombres;			
 	if (mail($email,$subject,$message,$header)){
